@@ -189,7 +189,7 @@ endef
 define Package/zabbix-server-frontend
   $(call Package/zabbix/Default)
   TITLE+= server-frontend
-  DEPENDS += +php8 \
+  DEPENDS += @PACKAGE_php8 \
     +php8-cgi \
     +php8-mod-gd \
     +php8-mod-bcmath \
